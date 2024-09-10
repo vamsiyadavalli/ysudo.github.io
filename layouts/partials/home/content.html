@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="section" id="home-content">
+        <h1 class="title is-2 has-text-centered">{{ .Site.Params.home_title | default .Site.Title }}</h1>
+        <h2 class="subtitle is-4 has-text-centered">{{ .Site.Params.home_subtitle | default "Revolutionizing Business Through Intelligent Automation" }}</h2>
+        <p class="has-text-centered">{{ .Site.Params.home_description | default "We don't just automate processes – we revolutionize entire business ecosystems. Our intelligent automation solutions transform ambitious goals into operational realities, delivering unparalleled efficiency and innovation." }}</p>
+        
+        <div class="columns is-centered mt-6">
+            <div class="column is-narrow">
+                <h3 class="title is-4">Our Impact</h3>
+                <ul>
+                    <li><strong>40% Reduction</strong> in Operational Costs</li>
+                    <li><strong>60% Improvement</strong> in Process Efficiency</li>
+                    <li><strong>99.9% Compliance</strong> in Regulated Industries</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="has-text-centered mt-6">
+            <a href="{{ .Site.Params.home_buttonLink | default "/about" }}" class="button is-primary is-large">{{ .Site.Params.home_buttonText | default "Tell me more" }}</a>
+        </div>
+    </div>
+</div>

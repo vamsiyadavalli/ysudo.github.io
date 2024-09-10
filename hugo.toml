@@ -1,3 +1,109 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://ysudo.io"
+languageCode = "en-us"
+title = "Y Solutions - Intelligent Automation Experts"
+theme = "introduction"
+
+[params]
+    themeStyle = "light"
+    showRSSButton = false
+    fadeIn = true
+    fadeInIndex = false
+    dateFormat = "Jan 2, 2006"
+    email = "contact@ysudo.io"  # Replace with your actual contact email
+
+    # Home page
+    introHeight = "large" # Input either 'medium' or 'large' or 'fullheight'
+    showLatest = false
+    showAllPosts = false
+
+    home_title = "Y Solutions"
+    home_subtitle = "Revolutionizing Business Through Intelligent Automation"
+    home_buttonText = "Tell me more"
+    home_buttonLink = "/about"
+    home_description = "We don't just automate processes – we revolutionize entire business ecosystems. Our intelligent automation solutions transform ambitious goals into operational realities, delivering unparalleled efficiency and innovation."
+
+    # Menu
+    showMenu = true
+    showServices = true
+
+    # About section
+    showSkills = true
+    showProjects = false
+    showBlog = false
+
+    # Footer
+    [params.footer]
+        text = "© 2023 Y Solutions. All rights reserved."
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 2
+    [[menu.main]]
+        name = "Services"
+        url = "/services/"
+        weight = 3
+    [[menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 4
+
+[params.services]
+    [[params.services.list]]
+        title = "Enterprise Integration"
+        description = "Seamlessly connect your systems for improved efficiency."
+        icon = "fa-cogs"
+    [[params.services.list]]
+        title = "Process Automation"
+        description = "Streamline operations with intelligent automation solutions."
+        icon = "fa-robot"
+    [[params.services.list]]
+        title = "Cloud Solutions"
+        description = "Harness the power of cloud for scalability and flexibility."
+        icon = "fa-cloud"
+
+[params.social]
+    [[params.social.list]]
+        icon = "fab fa-linkedin-in"
+        url = "https://www.linkedin.com/in/your-profile/"
+    [[params.social.list]]
+        icon = "fab fa-github"
+        url = "https://github.com/your-profile"
+[build]
+  writeStats = true
+
+[build.buildStats]
+  enable = true
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+
+[postcss]
+  use = "autoprefixer"
+  [postcss.autoprefixer]
+    browsers = [
+      "last 2 versions",
+      "Explorer >= 11",
+      "Android >= 4.4",
+      "Safari >= 9",
+      "iOS >= 9"
+    ]
