@@ -17,13 +17,13 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: 'latest'
+        hugo-version: '0.119.0'  # Use the last version before the deprecation
         extended: true
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Use Node.js 18
+        node-version: '18'
 
     - name: Install PostCSS CLI and Autoprefixer
       run: npm install -g postcss-cli autoprefixer
