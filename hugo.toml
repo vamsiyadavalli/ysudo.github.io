@@ -109,3 +109,7 @@ theme = "introduction"
       "Safari >= 9",
       "iOS >= 9"
     ]
+[
+logLevel
+]
+  deprecation = "warn"
