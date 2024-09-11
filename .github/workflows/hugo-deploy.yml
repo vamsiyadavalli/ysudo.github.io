@@ -20,6 +20,16 @@ jobs:
         hugo-version: 'latest'
         extended: true
 
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install PostCSS CLI and plugins
+      run: |
+        npm install -g postcss-cli autoprefixer
+        npm install
+
     - name: Build
       run: hugo --minify
 
