@@ -5,7 +5,7 @@ draft: false
 layout: "about"
 ---
 
-# Pioneering Intelligent Automation for Enterprise Excellence
+# Intelligent Automation Excellence
 
 At Y Solutions, we are at the forefront of the intelligent automation revolution. For over 17 years, we've been transforming businesses across industries, leveraging cutting-edge technology to drive unprecedented efficiency, innovation, and growth.
 

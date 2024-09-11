@@ -5,7 +5,7 @@ draft: false
 layout: "services"
 ---
 
-# Comprehensive Intelligent Automation Solutions
+# Advanced Automation Solutions
 
 At Y Solutions, we offer a suite of cutting-edge services designed to revolutionize your business operations. Our solutions cater to both your immediate needs and long-term strategic goals, ensuring a seamless journey towards digital transformation.
 
