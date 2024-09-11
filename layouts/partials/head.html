@@ -1,0 +1,6 @@
+<meta name="description" content="{{ .Site.Params.home_description }}">
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+{{ end }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
