@@ -4,7 +4,6 @@ title = "Y Solutions"
 theme = "introduction"
 
 [params]
-    
     themeStyle = "light"
     showRSSButton = false
     fadeIn = true
@@ -76,6 +75,7 @@ theme = "introduction"
     [[params.social.list]]
         icon = "fab fa-github"
         url = "https://github.com/your-profile"
+
 [build]
   writeStats = true
 
@@ -109,7 +109,6 @@ theme = "introduction"
       "Safari >= 9",
       "iOS >= 9"
     ]
-[
-logLevel
-]
+
+[logLevel]
   deprecation = "warn"
